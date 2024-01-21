@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | 2d</title>
+    <title>Unity WebGL Player | Quizu</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,11 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">2d</div>
-      </div>
-      <div>
-        <p>十字キー: WASD</p>
-        <p>ジャンプ・決定: スペース</p>
+        <div id="unity-build-title">Quizu</div>
       </div>
     </div>
     <script>
@@ -61,15 +57,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/webgl.loader.js";
+      var loaderUrl = buildUrl + "/test.loader.js";
       var config = {
-        dataUrl: buildUrl + "/webgl.data.unityweb",
-        frameworkUrl: buildUrl + "/webgl.framework.js.unityweb",
-        codeUrl: buildUrl + "/webgl.wasm.unityweb",
+        dataUrl: buildUrl + "/test.data.br",
+        frameworkUrl: buildUrl + "/test.framework.js.br",
+        codeUrl: buildUrl + "/test.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "2d",
-        productVersion: "",
+        productName: "Quizu",
+        productVersion: "1.0",
         showBanner: unityShowBanner,
       };
 
